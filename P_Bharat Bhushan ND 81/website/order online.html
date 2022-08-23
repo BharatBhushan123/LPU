@@ -1,0 +1,48 @@
+<html>
+<title>ND Food Corner</title>
+<head></head>
+<link rel="stylesheet" href="order online.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body style="background-color:skyblue;">
+<div>
+<ul>
+<li><a href="order online.html" ><b style="font-size:30; background:black; color:yellow;">order online</b></a></li>
+<li><a href="Gallery.html" ><b style="font-size:30; background:black; color:yellow;">Gallery</b></a></li>
+<li><a href="food corner.html" ><b style="font-size:30; background:black; color:yellow;">Home</b></a></li>
+</ul>
+<body>
+<b style="position:absolute;top:10; left:300;font-size:60;  color:Maroon;">Book your order here!</b></p>
+<Form method="POST" style="position:absolute;top:100; left:300;font-size:30;  color:green;">
+<b>First Name  </b><input type="text" placeholder="enter your first name" id="t1" /><br><br>
+<b>Last Name   </b><input type="text" placeholder="enter your last  name" id="t2" /><br><br>
+<b>Payment     </b><input type="radio" name="g" id="g1">cash</b></input><input type="radio" name="g" id="g2">net banking</input><br><br>
+<b>Address     </b><textarea rows="1" cols="20" id="t3"></textarea><br><br>
+<b>Mobile No.  </b><input type="text" placeholder="+91" id="t3" /><br><br>
+<b>Recipe  </b><input type="text" placeholder="enter your Recipe name" id="t3" /><br><br>
+
+<input type="button" value="Submit" onclick="return valid()">
+</Form>
+<b style="position:absolute;top:600;right:0;left:0;font-size:70;  color:Blue;"><marquee direction="left" scrolldelay="10">Thank You! for visiting this Site</marquee></b>
+</div>
+<div style="position:absolute;top:100; right:100">
+<img src="https://th.bing.com/th/id/OIP.Jjoic0FNTZ1BQbKB_1My4AHaEK?pid=ImgDet&rs=1" height="400" width="500"/>
+</div>
+
+<script>
+function valid(){
+
+if(document.getElementById("g1").checked==false && document.getElementById("g2").checked==false )
+{
+alert("fill your all details");
+return false;
+}
+alert("sucessfully! submitted your order");
+}
+</script>
+
+
+
+
+</body>
+</html>
